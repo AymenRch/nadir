@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Home from './screens/Home'
+import RegisterWork from './screens/RegisterWork'
+import PaymentPage from './screens/Payment'
+import AdminDashboard from './screens/dash';
+import CourtMetrageRoles from './screens/courtMetrageRoles';
+import PricingPage from './screens/PricingPage';
+import ArtistPage from './screens/ArtistPage';
+import RealisateurStudio from './screens/RealisateurStudio ';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/RegisterWork" element={<RegisterWork/>} />
+      <Route path="/Payment" element={<PaymentPage />} />
+      <Route path="/Admin" element={<AdminDashboard />} />
+      <Route path="/court-metrage" >
+        <Route path="roles" element={<CourtMetrageRoles />} />
+        <Route path="pricing" element={<PricingPage />} />
+        <Route path="artist" element={<ArtistPage />} />
+        <Route path="studio" element={<RealisateurStudio />} />
+      </Route>
+    </Routes>
+  )
 }
 
-export default App;
+export default App

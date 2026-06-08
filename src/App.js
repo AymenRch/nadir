@@ -12,7 +12,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/RegisterWork" element={<RegisterWork/>} />
+{
+  /*
+        <Route path="/RegisterWork" element={<RegisterWork/>} />
       <Route path="/Payment" element={<PaymentPage />} />
       <Route path="/Admin" element={<AdminDashboard />} />
       <Route path="/court-metrage" >
@@ -21,6 +23,8 @@ function App() {
         <Route path="artist" element={<ArtistPage />} />
         <Route path="studio" element={<RealisateurStudio />} />
       </Route>
+  */
+}
     </Routes>
   )
 }

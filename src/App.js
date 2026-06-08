@@ -7,7 +7,6 @@ import CourtMetrageRoles from './screens/courtMetrageRoles';
 import PricingPage from './screens/PricingPage';
 import ArtistPage from './screens/ArtistPage';
 import RealisateurStudio from './screens/RealisateurStudio ';
-import ExpiredPage from './screens/expired';
 
 function App() {
   return (

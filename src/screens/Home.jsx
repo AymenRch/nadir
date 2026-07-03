@@ -1,4 +1,4 @@
-{/*import { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../logo.png";
 
@@ -227,28 +227,6 @@ const styles = {
   btnHovered: {
     background: "rgba(201,168,76,0.14)", borderColor: "#C9A84C", color: "#e8d9b0",
   },
-};
-
-export default Home;
-*/}
-import React from 'react';
-
-const Home = () => {
-  return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "2rem",
-        fontWeight: "bold",
-        textAlign: "center",
-      }}
-    >
-      You have to pay.
-    </div>
-  );
 };
 
 export default Home;

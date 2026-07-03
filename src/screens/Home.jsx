@@ -1,4 +1,4 @@
-import { useState } from "react";
+{/*import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../logo.png";
 
@@ -25,28 +25,22 @@ const IntellectualPropertyIllustration = () => (
 
 const CourtMetrageIllustration = () => (
   <svg viewBox="0 0 160 130" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", maxWidth: 160 }}>
-    {/* Film strip left */}
     <rect x="8" y="20" width="22" height="90" rx="3" fill="#1a1a2e" stroke="#C9A84C" strokeWidth="1.2" />
     {[28, 42, 56, 70, 84, 98].map((y, i) => (
       <rect key={i} x="12" y={y} width="14" height="8" rx="1.5" fill="#C9A84C" opacity="0.25" />
     ))}
-    {/* Film strip right */}
     <rect x="130" y="20" width="22" height="90" rx="3" fill="#1a1a2e" stroke="#C9A84C" strokeWidth="1.2" />
     {[28, 42, 56, 70, 84, 98].map((y, i) => (
       <rect key={i} x="134" y={y} width="14" height="8" rx="1.5" fill="#C9A84C" opacity="0.25" />
     ))}
-    {/* Center screen */}
     <rect x="38" y="28" width="84" height="54" rx="6" fill="#0d0d1a" stroke="#C9A84C" strokeWidth="1.5" />
-    {/* Play triangle */}
     <polygon points="68,42 68,68 95,55" fill="#C9A84C" opacity="0.85" />
-    {/* AI sparkle stars */}
     {[[108, 35], [114, 55], [104, 70]].map(([x, y], i) => (
       <g key={i}>
         <line x1={x} y1={y - 5} x2={x} y2={y + 5} stroke="#C9A84C" strokeWidth="1.2" opacity="0.6" />
         <line x1={x - 5} y1={y} x2={x + 5} y2={y} stroke="#C9A84C" strokeWidth="1.2" opacity="0.6" />
       </g>
     ))}
-    {/* Bottom clapperboard hint */}
     <rect x="50" y="90" width="60" height="22" rx="3" fill="#16213e" stroke="#C9A84C" strokeWidth="1" />
     {[0,1,2,3,4].map(i => (
       <line key={i} x1={50 + i * 12} y1="90" x2={56 + i * 12} y2="100" stroke="#C9A84C" strokeWidth="1.5" opacity="0.5" />
@@ -233,6 +227,28 @@ const styles = {
   btnHovered: {
     background: "rgba(201,168,76,0.14)", borderColor: "#C9A84C", color: "#e8d9b0",
   },
+};
+
+export default Home;
+*/}
+import React from 'react';
+
+const Home = () => {
+  return (
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "2rem",
+        fontWeight: "bold",
+        textAlign: "center",
+      }}
+    >
+      You have to pay.
+    </div>
+  );
 };
 
 export default Home;
